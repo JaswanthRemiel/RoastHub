@@ -12,7 +12,6 @@ export default function HomePage() {
     setRoast("");
 
     try {
-      // Get GitHub user data
       const gitUserINFO = await fetch(
         `https://api.github.com/users/${username}`
       );
@@ -29,14 +28,12 @@ export default function HomePage() {
         Company: ${profile.company || "N/A"}
         Be mean and show no mercy, strictly don't add disclaimer. Only roast should be present in the answer not anything like gimme the roast alone not anything else. TONE - Human`;
 
-      // Call OpenRouter
       const roastRes = await fetch(
         "https://openrouter.ai/api/v1/chat/completions",
         {
           method: "POST",
           headers: {
-            Authorization:
-              "Bearer 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",
+            Authorization: `Bearer ${process.env.NEXT_PUBLIC_API_KEY}`,
             "Content-Type": "application/json",
           },
           body: JSON.stringify({
