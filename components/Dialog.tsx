@@ -27,8 +27,12 @@ export default function HomePage() {
       } else {
         setRoast("Could not generate roast.");
       }
-    } catch (error: any) {
-      setRoast(`Error: ${error.message}`);
+    } catch (error) {
+      if (error instanceof Error) {
+        setRoast(`Error: ${error.message}`);
+      } else {
+        setRoast("An unknown error occurred");
+      }
     } finally {
       setLoading(false);
     }
