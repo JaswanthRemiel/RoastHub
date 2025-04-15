@@ -12,46 +12,21 @@ export default function HomePage() {
     setRoast("");
 
     try {
-      const gitUserINFO = await fetch(
-        `https://api.github.com/users/${username}`
-      );
-      if (!gitUserINFO.ok) throw new Error("GitHub user not found");
+      const res = await fetch("https://api.remiel.fyi/roasthub", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ username }),
+      });
 
-      const profile = await gitUserINFO.json();
+      const data = await res.json();
 
-      const prompt = `Roast this GitHub user based on their profile info:\n
-        Name: ${profile.name || "N/A"}
-        Bio: ${profile.bio || "N/A"}
-        Public Repos: ${profile.public_repos}
-        Followers: ${profile.followers}
-        Following: ${profile.following}
-        Company: ${profile.company || "N/A"}
-        Be mean and show no mercy, strictly don't add disclaimer. Only roast should be present in the answer not anything like gimme the roast alone not anything else. TONE - Human`;
-
-      const roastRes = await fetch(
-        "https://openrouter.ai/api/v1/chat/completions",
-        {
-          method: "POST",
-          headers: {
-            Authorization: `Bearer ${process.env.NEXT_PUBLIC_API_KEY}`,
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            model: "google/gemma-3-12b-it:free",
-            messages: [
-              {
-                role: "user",
-                content: prompt,
-              },
-            ],
-          }),
-        }
-      );
-
-      const data = await roastRes.json();
-      const roastText = data.choices[0].message.content;
-
-      setRoast(roastText);
+      if (data.roast) {
+        setRoast(data.roast);
+      } else {
+        setRoast("Could not generate roast.");
+      }
     } catch (error: any) {
       setRoast(`Error: ${error.message}`);
     } finally {
