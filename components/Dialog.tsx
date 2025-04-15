@@ -56,7 +56,7 @@ export default function HomePage() {
 
       setRoast(roastText);
     } catch (error: any) {
-      setRoast(`❌ Error: ${error.message}`);
+      setRoast(`Error: ${error.message}`);
     } finally {
       setLoading(false);
     }
