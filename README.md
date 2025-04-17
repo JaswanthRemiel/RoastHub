@@ -1,6 +1,5 @@
 ## ROASTHUB
 <p align="left">
-	<img src="https://img.shields.io/github/license/JaswanthRemiel/RoastHub?style=flat&logo=opensourceinitiative&logoColor=white&color=0080ff" alt="license">
 	<img src="https://img.shields.io/github/last-commit/JaswanthRemiel/RoastHub?style=flat&logo=git&logoColor=white&color=0080ff" alt="last-commit">
 	<img src="https://img.shields.io/github/languages/top/JaswanthRemiel/RoastHub?style=flat&color=0080ff" alt="repo-top-language">
 	<img src="https://img.shields.io/github/languages/count/JaswanthRemiel/RoastHub?style=flat&color=0080ff" alt="repo-language-count">
@@ -208,11 +207,5 @@ Install RoastHub using one of the following methods:
    </a>
 </p>
 </details>
-
----
-
-##  License
-
-This project is protected under the [SELECT-A-LICENSE](https://choosealicense.com/licenses) License. For more details, refer to the [LICENSE](https://choosealicense.com/licenses/) file.
 
 ---
