@@ -15,24 +15,9 @@
 	<img src="https://img.shields.io/badge/ESLint-4B32C3.svg?style=flat&logo=ESLint&logoColor=white" alt="ESLint">
 </p>
 
-##  Table of Contents
-
-- [ Overview](#-overview)
-- [ Project Structure](#-project-structure)
-  - [ Project Index](#-project-index)
-- [ Getting Started](#-getting-started)
-  - [ Prerequisites](#-prerequisites)
-  - [ Installation](#-installation)
-  - [ Usage](#-usage)
-  - [ Testing](#-testing)
-- [ Contributing](#-contributing)
-- [ License](#-license)
-
----
-
 ##  Overview
 
-<code>❯ REPLACE-ME</code>
+a github profile roaster enhanced with the help of gemini model 3B.
 
 ---
 
