@@ -41,6 +41,11 @@ export default function HomePage() {
   return (
     <main className="p-6 max-w-md mx-auto align-center">
       <h1 className="text-2xl text-center font-bold mb-4">github roaster</h1>
+      <img
+        src="/gif/roast.gif"
+        alt="Roast animation"
+        className="w-full rounded-lg mb-4"
+      />
       <input
         className="border text-center rounded-lg p-2 w-full mb-2"
         placeholder="enter github username"
