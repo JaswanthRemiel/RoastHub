@@ -40,7 +40,7 @@ export default function HomePage() {
 
   return (
     <main className="p-6 max-w-md mx-auto align-center">
-      <h1 className="text-2xl text-center font-bold mb-4">roast me pls</h1>
+      <h1 className="text-2xl text-center font-bold mb-4">github roaster</h1>
       <input
         className="border text-center rounded-lg p-2 w-full mb-2"
         placeholder="enter github username"
@@ -54,7 +54,7 @@ export default function HomePage() {
         disabled={loading || !username}
       >
         {loading
-          ? "Cooking roast... that desperate to get roasted?"
+          ? "cooking roast... that desperate to get roasted?"
           : "roast me"}
       </button>
 
