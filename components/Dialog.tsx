@@ -42,7 +42,7 @@ export default function HomePage() {
     <main className="p-6 max-w-md mx-auto align-center">
       <h1 className="text-2xl text-center font-bold mb-4">github roaster</h1>
       <img
-        src="/gif/roast.gif"
+        src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExNXJvNmpnOXAyZnpzMWRhbTF1eXhmbWxpOGp6c2VzenFieWMyNjd4eiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/h4Z3uD0PHWh1KZZ6M1/giphy.gif"
         alt="Roast animation"
         className="w-full rounded-lg mb-4"
       />
