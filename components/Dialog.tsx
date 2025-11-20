@@ -12,7 +12,7 @@ export default function HomePage() {
     setRoast("");
 
     try {
-      const res = await fetch("https://api.remiel.fyi/roasthub", {
+      const res = await fetch("https://api.remiel.work/roasthub/generate", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
